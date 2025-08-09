@@ -15,14 +15,14 @@ $./exeToPATH (Options) (/path/to/file)
   $chmod +x ./exeToPath 
 
 Options:
-  -i, -install //adds the path to the specified executable to the PATH variable. If none specified promt user
-
-  -u, -uninstall //unistalls the script if no executable specified prompt the user
+  help //lists the set of commands and their uses.
 
   -c, -check //checks if the executable is already in the PATH. This is also the default option if no arg is given.
 
-  -h, -help //lists the set of commands and their uses.
+  -i, -install //adds the path to the specified executable to the PATH variable. If none specified promt user
 
+  -u, -uninstall //unistalls the script if no executable specified prompt the user
+  
 /path/to/file:
   The executable file to be added to the PATH
 
