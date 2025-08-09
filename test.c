@@ -3,5 +3,7 @@
 
 int main(int argc, char** argv) {
   println("Hello World");
-  if(argv[1])
+  if(argv[1]){
+
+  }
 }
