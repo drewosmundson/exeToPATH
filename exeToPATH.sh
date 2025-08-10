@@ -22,6 +22,10 @@ help() {
     echo "/path/to/file:"
     echo "  The executable file to be added to the PATH"
 }
+check(FILE) { 
+  if [ t ]
+
+}
 
 install() {
 
@@ -31,9 +35,6 @@ uninstall() {
 
 }
 
-check() { 
-
-}
 
 
 
@@ -62,17 +63,16 @@ main(){
 
   #check if the file is already installed in the system
   if [ $2 -eq "-c"] || [ $2 -eq "-check"] then
-
+    check(FILE)
   
   elif [ $2 -eq "-i"] || [ $2 -eq "-u"] then
-
-
+    uninstall
 
   elif [ $2 -eq "-u"] || [ $2 -eq "-u"] then
+    install
 
-
-  else []
-
+  else 
+    
 }
 
 
