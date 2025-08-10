@@ -45,32 +45,33 @@ main(){
   else
     echo "No executable argument usage: $./exeToPATH -options path/to/your/exe"
     echo "Use ./exeToPATH help for a list of commands"
-    exit 0
+    exit 1
   fi
-
+  
   if [ $1 -eq "help" ] || [ $2 -eq "help" ] then
     help
   fi
 
   if [ -x $1 ] then
     FILE=$1
+  else 
+    echo "Specified file is not an executable."
+    echo "Make sure your file has the right permissions and has no complation errors"
+    exit 1
   fi
 
-  if [ -x $2 ] then
-    FILE=$2 
-  fi
+  #check if the file is already installed in the system
+  if [ $2 -eq "-c"] || [ $2 -eq "-check"] then
 
-  if 
-
-
-
-  FILE=
-
-  if [ -x $1]
+  
+  elif [ $2 -eq "-i"] || [ $2 -eq "-u"] then
 
 
 
+  elif [ $2 -eq "-u"] || [ $2 -eq "-u"] then
 
+
+  else []
 
 }
 
